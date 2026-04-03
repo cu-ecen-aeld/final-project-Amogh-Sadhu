@@ -1,6 +1,6 @@
 # final-project-Amogh-Sadhu
 
-[Project Overview]()
+[Project Overview](https://github.com/cu-ecen-aeld/final-project-Amogh-Sadhu/wiki/Project-Overview)
 
 [Project Schedule]()
 
