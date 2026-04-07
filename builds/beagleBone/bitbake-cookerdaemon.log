@@ -1,0 +1,205 @@
+11841 14:23:25.070631 --- Starting bitbake server pid 11841 at 2026-04-06 14:23:25.070616 ---
+11841 14:23:25.071224 Started bitbake server pid 11841
+11841 14:23:25.071339 Entering server connection loop
+11841 14:23:25.071353 Lockfile is: /home/amogh/yocto-project/builds/beagleBone/bitbake.lock
+Socket is /home/amogh/yocto-project/builds/beagleBone/bitbake.sock (True)
+11841 14:23:25.072066 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+11841 14:23:25.072317 Processing Client
+11841 14:23:25.072343 Connecting Client
+11841 14:23:25.072559 Running command ['setFeatures', [2, 1]]
+11841 14:23:25.072581 Sending reply (None, None)
+11841 14:23:25.072621 Command Completed (socket: True)
+11841 14:23:25.073181 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/amogh/yocto-project/builds/beagleBone', 'LOGNAME': 'amogh', 'HOME': '/home/amogh', 'BBPATH': '/home/amogh/yocto-project/builds/beagleBone', 'USER': 'amogh', 'PATH': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/asus-m3500qc:@/tmp/.ICE-unix/2645,unix/asus-m3500qc:/tmp/.ICE-unix/2645', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2679', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.986EN3', 'USERNAME': 'amogh', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b829cdb9_254f_436f_a7e8_5b3011cca4c4', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/amogh/yocto-project/poky/bitbake/lib:/home/amogh/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.135', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/amogh/yocto-project/builds/beagleBone', 'OLDPWD': '/home/amogh/yocto-project/poky', '_': '/home/amogh/yocto-project/poky/bitbake/bin/bitbake'}, ['/home/amogh/yocto-project/poky/bitbake/bin/bitbake']]
+11841 14:23:25.451813 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=11841) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+11841 14:23:25.470695 Sending reply (None, None)
+11841 14:23:25.470820 Command Completed (socket: True)
+11841 14:23:25.470966 Running command ['getVariable', 'BBINCLUDELOGS']
+11841 14:23:25.471044 Sending reply ('yes', None)
+11841 14:23:25.471076 Command Completed (socket: True)
+11841 14:23:25.471138 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+11841 14:23:25.471162 Sending reply (None, None)
+11841 14:23:25.471195 Command Completed (socket: True)
+11841 14:23:25.471247 Running command ['getSetVariable', 'BB_CONSOLELOG']
+11841 14:23:25.471315 Sending reply ('/home/amogh/yocto-project/builds/beagleBone/tmp/log/cooker/qemux86-64/20260406085325.log', None)
+11841 14:23:25.471344 Command Completed (socket: True)
+11841 14:23:25.471392 Running command ['getSetVariable', 'BB_LOGCONFIG']
+11841 14:23:25.471410 Sending reply (None, None)
+11841 14:23:25.471435 Command Completed (socket: True)
+11841 14:23:25.472824 Running command ['getUIHandlerNum']
+11841 14:23:25.472846 Sending reply (1, None)
+11841 14:23:25.472873 Command Completed (socket: True)
+11841 14:23:25.472945 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+11841 14:23:25.472982 Sending reply (True, None)
+11841 14:23:25.473011 Command Completed (socket: True)
+11841 14:23:25.473059 Running command ['getVariable', 'BB_DEFAULT_TASK']
+11841 14:23:25.473073 Sending reply ('build', None)
+11841 14:23:25.473100 Command Completed (socket: True)
+11841 14:23:25.473143 Running command ['setConfig', 'cmd', 'build']
+11841 14:23:25.473164 Sending reply (None, None)
+11841 14:23:25.473196 Command Completed (socket: True)
+11841 14:23:25.473234 Running command ['getVariable', 'BBTARGETS']
+11841 14:23:25.473249 Sending reply (None, None)
+11841 14:23:25.473277 Command Completed (socket: True)
+11841 14:23:25.685589 Processing Client
+11841 14:23:25.685826 Disconnecting Client (socket: True)
+11841 14:23:25.686664 No timeout, exiting.
+11841 14:23:25.787304 Exiting (socket: True)
+11841 14:23:25.792889 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/amogh/yocto-project/builds/beagleBone/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+11852 14:23:33.741407 --- Starting bitbake server pid 11852 at 2026-04-06 14:23:33.741392 ---
+11852 14:23:33.741995 Started bitbake server pid 11852
+11852 14:23:33.742117 Entering server connection loop
+11852 14:23:33.742131 Lockfile is: /home/amogh/yocto-project/builds/beagleBone/bitbake.lock
+Socket is /home/amogh/yocto-project/builds/beagleBone/bitbake.sock (True)
+11852 14:23:33.742472 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+11852 14:23:33.743113 Processing Client
+11852 14:23:33.743147 Connecting Client
+11852 14:23:33.743404 Running command ['setFeatures', [2, 1]]
+11852 14:23:33.743432 Sending reply (None, None)
+11852 14:23:33.743481 Command Completed (socket: True)
+11852 14:23:33.743972 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/amogh/yocto-project/builds/beagleBone', 'LOGNAME': 'amogh', 'HOME': '/home/amogh', 'BBPATH': '/home/amogh/yocto-project/builds/beagleBone', 'USER': 'amogh', 'PATH': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/asus-m3500qc:@/tmp/.ICE-unix/2645,unix/asus-m3500qc:/tmp/.ICE-unix/2645', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2679', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.986EN3', 'USERNAME': 'amogh', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b829cdb9_254f_436f_a7e8_5b3011cca4c4', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/amogh/yocto-project/poky/bitbake/lib:/home/amogh/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.135', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/amogh/yocto-project/builds/beagleBone', 'OLDPWD': '/home/amogh/yocto-project/poky', '_': '/home/amogh/yocto-project/poky/bitbake/bin/bitbake-layers'}, ['/home/amogh/yocto-project/poky/bitbake/bin/bitbake-layers', 'show-layrs']]
+11852 14:23:34.094309 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=11852) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+11852 14:23:34.104263 Sending reply (None, None)
+11852 14:23:34.104386 Command Completed (socket: True)
+11852 14:23:34.104530 Running command ['parseConfiguration']
+11852 14:23:34.104968 Sending reply (None, None)
+11852 14:23:34.105010 Command Completed (socket: True)
+11852 14:23:34.105142 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+11852 14:23:34.105190 Sending reply (None, None)
+11852 14:23:34.105224 Command Completed (socket: True)
+11852 14:23:34.105336 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+11852 14:23:34.105377 Sending reply ('/home/amogh/yocto-project/poky/meta-poky:/home/amogh/yocto-project/builds/beagleBone:/home/amogh/yocto-project/poky/meta:/home/amogh/yocto-project/poky/meta-yocto-bsp', None)
+11852 14:23:34.105416 Command Completed (socket: True)
+11852 14:23:34.125068 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.125103 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.125141 Command Completed (socket: True)
+11852 14:23:34.125237 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.125301 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.125339 Command Completed (socket: True)
+11852 14:23:34.125963 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.125982 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.126024 Command Completed (socket: True)
+11852 14:23:34.126102 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.126138 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.126173 Command Completed (socket: True)
+11852 14:23:34.126754 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.126773 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.126807 Command Completed (socket: True)
+11852 14:23:34.126887 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.126915 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.126954 Command Completed (socket: True)
+11852 14:23:34.128035 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.128055 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.128088 Command Completed (socket: True)
+11852 14:23:34.128167 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.128195 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.128229 Command Completed (socket: True)
+11852 14:23:34.128496 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+11852 14:23:34.128520 Sending reply ('/home/amogh/yocto-project/poky/meta-poky:/home/amogh/yocto-project/builds/beagleBone:/home/amogh/yocto-project/poky/meta:/home/amogh/yocto-project/poky/meta-yocto-bsp', None)
+11852 14:23:34.128553 Command Completed (socket: True)
+11852 14:23:34.130063 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.130083 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.130118 Command Completed (socket: True)
+11852 14:23:34.130199 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.130230 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.130265 Command Completed (socket: True)
+11852 14:23:34.130544 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11852 14:23:34.130565 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11852 14:23:34.130599 Command Completed (socket: True)
+11852 14:23:34.130676 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11852 14:23:34.130706 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11852 14:23:34.130739 Command Completed (socket: True)
+11852 14:23:34.131426 Running command ['clientComplete']
+11852 14:23:34.131491 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7868bceae0f0>>
+11852 14:23:34.131499 Sending reply (True, None)
+11852 14:23:34.131531 Command Completed (socket: True)
+11852 14:23:34.173987 Processing Client
+11852 14:23:34.174149 Disconnecting Client (socket: True)
+11852 14:23:34.175072 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7868bceae0f0>>
+11852 14:23:34.175329 No timeout, exiting.
+11852 14:23:34.275993 Exiting (socket: True)
+11852 14:23:34.281654 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/amogh/yocto-project/builds/beagleBone/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+11863 14:23:36.878803 --- Starting bitbake server pid 11863 at 2026-04-06 14:23:36.878786 ---
+11863 14:23:36.879392 Started bitbake server pid 11863
+11863 14:23:36.879511 Entering server connection loop
+11863 14:23:36.879525 Lockfile is: /home/amogh/yocto-project/builds/beagleBone/bitbake.lock
+Socket is /home/amogh/yocto-project/builds/beagleBone/bitbake.sock (True)
+11863 14:23:36.880414 Accepting [<socket.socket fd=6, family=1, type=1, proto=0, laddr=bitbake.sock>] ([])
+11863 14:23:36.880681 Processing Client
+11863 14:23:36.880702 Connecting Client
+11863 14:23:36.880916 Running command ['setFeatures', [2, 1]]
+11863 14:23:36.880939 Sending reply (None, None)
+11863 14:23:36.881005 Command Completed (socket: True)
+11863 14:23:36.881460 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/amogh/yocto-project/builds/beagleBone', 'LOGNAME': 'amogh', 'HOME': '/home/amogh', 'BBPATH': '/home/amogh/yocto-project/builds/beagleBone', 'USER': 'amogh', 'PATH': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/asus-m3500qc:@/tmp/.ICE-unix/2645,unix/asus-m3500qc:/tmp/.ICE-unix/2645', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/amogh/yocto-project/poky/scripts:/home/amogh/yocto-project/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2679', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.986EN3', 'USERNAME': 'amogh', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'VTE_VERSION': '7600', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b829cdb9_254f_436f_a7e8_5b3011cca4c4', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/amogh/yocto-project/poky/bitbake/lib:/home/amogh/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.135', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'DISPLAY': ':0', 'SHLVL': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com ', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/amogh/yocto-project/builds/beagleBone', 'OLDPWD': '/home/amogh/yocto-project/poky', '_': '/home/amogh/yocto-project/poky/bitbake/bin/bitbake-layers'}, ['/home/amogh/yocto-project/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+11863 14:23:37.233554 Base config valid
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=11863) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+11863 14:23:37.243720 Sending reply (None, None)
+11863 14:23:37.243835 Command Completed (socket: True)
+11863 14:23:37.243987 Running command ['parseConfiguration']
+11863 14:23:37.244469 Sending reply (None, None)
+11863 14:23:37.244511 Command Completed (socket: True)
+11863 14:23:37.244681 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+11863 14:23:37.244739 Sending reply (None, None)
+11863 14:23:37.244769 Command Completed (socket: True)
+11863 14:23:37.244902 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+11863 14:23:37.244938 Sending reply ('/home/amogh/yocto-project/poky/meta-poky:/home/amogh/yocto-project/builds/beagleBone:/home/amogh/yocto-project/poky/meta:/home/amogh/yocto-project/poky/meta-yocto-bsp', None)
+11863 14:23:37.244983 Command Completed (socket: True)
+11863 14:23:37.248613 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.248642 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.248683 Command Completed (socket: True)
+11863 14:23:37.248788 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.248857 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.248894 Command Completed (socket: True)
+11863 14:23:37.249543 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.249571 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.249604 Command Completed (socket: True)
+11863 14:23:37.249690 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.249730 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.249759 Command Completed (socket: True)
+11863 14:23:37.250385 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.250399 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.250425 Command Completed (socket: True)
+11863 14:23:37.250487 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.250509 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.250534 Command Completed (socket: True)
+11863 14:23:37.251564 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.251576 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.251600 Command Completed (socket: True)
+11863 14:23:37.251659 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.251687 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.251713 Command Completed (socket: True)
+11863 14:23:37.251999 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.252011 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.252035 Command Completed (socket: True)
+11863 14:23:37.252090 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.252115 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.252140 Command Completed (socket: True)
+11863 14:23:37.252369 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+11863 14:23:37.252380 Sending reply ('   /home/amogh/yocto-project/poky/meta   /home/amogh/yocto-project/poky/meta-poky   /home/amogh/yocto-project/poky/meta-yocto-bsp   ', None)
+11863 14:23:37.252403 Command Completed (socket: True)
+11863 14:23:37.252455 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+11863 14:23:37.252479 Sending reply ({'core': '/home/amogh/yocto-project/poky/meta/conf/layer.conf', 'yocto': '/home/amogh/yocto-project/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/home/amogh/yocto-project/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+11863 14:23:37.252504 Command Completed (socket: True)
+11863 14:23:37.252736 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+11863 14:23:37.252748 Sending reply ('/home/amogh/yocto-project/poky/meta-poky:/home/amogh/yocto-project/builds/beagleBone:/home/amogh/yocto-project/poky/meta:/home/amogh/yocto-project/poky/meta-yocto-bsp', None)
+11863 14:23:37.252770 Command Completed (socket: True)
+11863 14:23:37.253850 Running command ['getLayerPriorities']
+11863 14:23:37.253939 Sending reply ([('core', '^/home/amogh/yocto-project/poky/meta/', '^/home/amogh/yocto-project/poky/meta/', 5), ('yocto', '^/home/amogh/yocto-project/poky/meta-poky/', '^/home/amogh/yocto-project/poky/meta-poky/', 5), ('yoctobsp', '^/home/amogh/yocto-project/poky/meta-yocto-bsp/', '^/home/amogh/yocto-project/poky/meta-yocto-bsp/', 5)], None)
+11863 14:23:37.254017 Command Completed (socket: True)
+11863 14:23:37.254342 Running command ['clientComplete']
+11863 14:23:37.254425 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7b919a011970>>
+11863 14:23:37.254432 Sending reply (True, None)
+11863 14:23:37.254460 Command Completed (socket: True)
+11863 14:23:37.311386 Processing Client
+11863 14:23:37.312008 Disconnecting Client (socket: True)
+11863 14:23:37.312232 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7b919a011970>>
+11863 14:23:37.312501 No timeout, exiting.
+11863 14:23:37.413216 Exiting (socket: True)
+11863 14:23:37.419084 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/amogh/yocto-project/builds/beagleBone/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
